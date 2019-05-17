@@ -160,6 +160,14 @@
 		var completionCode = "Code: " + "THPM1" + fNameValue + lNameValue;
 		
 		document.getElementById("code").innerHTML = completionCode;
+		
+		var video = document.getElementById("video");
+	
+		var instructions = document.getElementById("instructions");
+
+		video.stop();
+
+		instructions.stop();
 
 		window.print();
 
