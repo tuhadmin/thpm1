@@ -165,9 +165,10 @@
 	
 		var instructions = document.getElementById("instructions");
 
-		video.stop();
-
-		instructions.stop();
+		video.pause();
+		instructions.pause();
+		video.currentTime = 0;
+		instructions.currentTime = 0;
 
 		window.print();
 
